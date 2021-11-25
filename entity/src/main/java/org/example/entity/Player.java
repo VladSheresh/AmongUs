@@ -1,12 +1,17 @@
 package org.example.entity;
 
-import javax.persistence.MappedSuperclass;
-import java.awt.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+import javax.persistence.*;
+
+@Getter
+@Setter
 @MappedSuperclass
 public abstract class Player extends BaseEntity {
 
-    private String nickName;
-
-
+    private String nickname;
+    private Location location;
 }

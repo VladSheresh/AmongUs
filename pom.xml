@@ -23,6 +23,9 @@
 
     <modules>
         <module>entity</module>
+        <module>dao</module>
+        <module>service</module>
+        <module>conroller</module>
     </modules>
 
     <dependencies>
