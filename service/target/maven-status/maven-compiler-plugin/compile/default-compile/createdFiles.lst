@@ -1,0 +1,5 @@
+org\example\service\api\LocationService.class
+org\example\service\api\TaskService.class
+org\example\service\api\ImposterService.class
+org\example\service\api\CrewmateService.class
+org\example\service\api\GameService.class

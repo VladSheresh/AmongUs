@@ -6,18 +6,22 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name="TASK")
+@Table(name = "task")
 
-public class Task extends BaseEntity{
+public class Task extends BaseEntity {
 
-  //  @ManyToOne(fetch=FetchType.LAZY)
-  //  @JoinColumn(name="location_id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "location_id")
     private Location location;
+
+    @ManyToMany(mappedBy = "tasks", fetch = FetchType.LAZY)
+    private List<Crewmate> crewmates;
 
 }

@@ -1,0 +1,12 @@
+org\example\dao\impl\AbstractDao.class
+org\example\dao\impl\ImposterDaoImpl.class
+org\example\dao\api\PlayerViewDao.class
+org\example\dao\impl\CrewmateDaoImpl.class
+org\example\dao\api\ImposterDao.class
+org\example\dao\impl\TaskDaoImpl.class
+org\example\dao\api\Dao.class
+org\example\dao\api\TaskDao.class
+org\example\dao\impl\PlayerViewDaoImpl.class
+org\example\dao\api\LocationDao.class
+org\example\dao\api\CrewmateDao.class
+org\example\dao\impl\LocationDaoImpl.class

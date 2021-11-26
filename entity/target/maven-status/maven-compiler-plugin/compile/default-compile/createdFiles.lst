@@ -1,0 +1,8 @@
+org\example\entity\enums\Colour.class
+org\example\entity\PlayerView.class
+org\example\entity\Crewmate.class
+org\example\entity\Location.class
+org\example\entity\Task.class
+org\example\entity\Player.class
+org\example\entity\BaseEntity.class
+org\example\entity\Imposter.class

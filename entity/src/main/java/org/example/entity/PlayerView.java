@@ -5,9 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.awt.*;
 
 @Getter
@@ -15,11 +13,9 @@ import java.awt.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name="PLAYER_VIEW")
+@Table(name="player_view")
 
 public class PlayerView extends BaseEntity {
-
-
 
     @Column(name="color")
     private Color color;
@@ -27,4 +23,9 @@ public class PlayerView extends BaseEntity {
     @Column(name="hat")
     private boolean hat;
 
+    @OneToOne(mappedBy = "playerView", fetch = FetchType.LAZY)
+    private Imposter imposter;
+
+    @OneToOne(mappedBy = "playerView", fetch = FetchType.LAZY)
+    private Crewmate crewmate;
 }

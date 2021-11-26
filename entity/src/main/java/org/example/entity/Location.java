@@ -13,17 +13,23 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name="LOCATION")
+@Table(name = "location")
 
-public class Location extends BaseEntity{
+public class Location extends BaseEntity {
 
-    @Column(name="location_name")
+    @Column(name = "location_name")
     private String locationName;
 
-   // @OneToMany(fetch= FetchType.LAZY)
+    @OneToMany(mappedBy = "location", fetch = FetchType.LAZY)
     private List<Task> tasks;
 
+    @Column(name = "is_dead_body")
     private boolean isDeadBody;
 
+    @OneToMany(mappedBy = "location", fetch = FetchType.LAZY)
+    private List<Imposter> imposters;
+
+    @OneToMany(mappedBy = "location", fetch = FetchType.LAZY)
+    private List<Crewmate> crewmates;
 
 }
