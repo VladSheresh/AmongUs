@@ -10,6 +10,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>service</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>dao</artifactId>
+            <version>${app.version}</version>
+        </dependency>
+    </dependencies>
 
 
 </project>

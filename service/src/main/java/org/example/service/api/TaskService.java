@@ -1,5 +1,5 @@
 package org.example.service.api;
 
-public interface TaskService {
+public interface TaskService extends Service {
 
 }

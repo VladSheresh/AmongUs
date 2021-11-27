@@ -1,9 +1,6 @@
 package org.example.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.List;
@@ -14,7 +11,7 @@ import java.util.List;
 @AllArgsConstructor
 @Entity
 @Table(name = "task")
-
+@Builder
 public class Task extends BaseEntity {
 
     @ManyToOne(fetch = FetchType.LAZY)

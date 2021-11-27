@@ -1,12 +1,9 @@
 package org.example.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+import org.example.entity.enums.Color;
 
 import javax.persistence.*;
-import java.awt.*;
 
 @Getter
 @Setter
@@ -14,10 +11,11 @@ import java.awt.*;
 @AllArgsConstructor
 @Entity
 @Table(name="player_view")
-
+@Builder
 public class PlayerView extends BaseEntity {
 
     @Column(name="color")
+    @Enumerated(EnumType.STRING)
     private Color color;
 
     @Column(name="hat")
