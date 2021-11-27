@@ -1,12 +1,12 @@
 package org.example.service.api;
 
 import org.example.entity.Crewmate;
-import org.example.service.dto.crewmateDto.CreateCrewmateDto;
-import org.example.service.dto.crewmateDto.GetCrewmateDto;
-import org.example.service.dto.crewmateDto.UpadateCrewmateDto;
+import org.example.service.dto.commanDto.ChangeLocationDto;
+import org.example.service.dto.crewmateDto.*;
 
-public interface CrewmateService extends Service <Crewmate, CreateCrewmateDto, UpadateCrewmateDto, GetCrewmateDto> {
-    void changeLocation(Long crewmateId,Long locationId);// + проверка на труп, написать,что нашел труп
-    void completeTask(Long crewmateId);//мб больше передать данных
+
+public interface CrewmateService extends Service <Crewmate, CrewmateCreateDto, CrewmateUpdateDto, CrewmateGetDto> {
+    void changeLocation(ChangeLocationDto crewmateChangeLocationDto);// + проверка на труп, написать,что нашел труп
+    void completeTask(CrewmateCompleteTaskDto crewmateCompleteTaskDto);//мб больше передать данных
 
 }

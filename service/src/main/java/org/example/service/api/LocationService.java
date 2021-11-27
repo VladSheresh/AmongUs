@@ -1,8 +1,13 @@
 package org.example.service.api;
 
-public interface LocationService {
+import org.example.entity.Location;
+import org.example.service.dto.locationDto.DeadBodyDto;
+import org.example.service.dto.locationDto.LocationCreateDto;
+import org.example.service.dto.locationDto.LocationGetDto;
+import org.example.service.dto.locationDto.LocationUpdateDto;
 
-    void setDeadBody();
-    void cleanDeadBody();
+public interface LocationService extends Service <Location, LocationCreateDto, LocationUpdateDto, LocationGetDto> {
+
+    void deadBodyLocation(DeadBodyDto deadBody);
 
 }

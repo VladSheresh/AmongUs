@@ -1,4 +1,4 @@
-package org.example.service.dto.crewmateDto;
+package org.example.service.dto.commanDto;
 
 import lombok.Builder;
 import lombok.Data;
@@ -6,7 +6,7 @@ import org.example.entity.enums.Color;
 
 @Builder
 @Data
-public class CrewmatePlayerViewDto {
+public class PlayerViewDto {
     private Color color;
     private Boolean hat;
 }
