@@ -14,6 +14,8 @@ public abstract class AbstractService<T extends BaseEntity,C extends AbstractDto
 
     private final D dao;
 
+
+
     @Autowired
     public AbstractService(D dao) {
         this.dao = dao;

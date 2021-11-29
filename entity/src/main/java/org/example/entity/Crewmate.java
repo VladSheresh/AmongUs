@@ -2,6 +2,7 @@ package org.example.entity;
 
 
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 import javax.persistence.*;
 import java.util.List;
@@ -13,7 +14,7 @@ import java.util.List;
 @AllArgsConstructor
 @Entity
 @Table(name="crewmate")
-@Builder
+@SuperBuilder(toBuilder = true)
 public class Crewmate extends Player{
 
     @ManyToMany(fetch = FetchType.LAZY)

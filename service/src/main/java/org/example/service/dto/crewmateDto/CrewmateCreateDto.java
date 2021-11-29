@@ -13,5 +13,6 @@ public class CrewmateCreateDto extends AbstractDto {
     private String nickname;
     private PlayerViewDto crewmatePlayerView;
     private LocationDto location;
+    private Long playerViewId;//по аналогии бейкери,берет айди,но мб и нет но работает,наверное
     private boolean isDead;
 }

@@ -1,8 +1,13 @@
-org\example\entity\enums\Colour.class
-org\example\entity\PlayerView.class
+org\example\entity\PlayerView$PlayerViewBuilder.class
 org\example\entity\Crewmate.class
 org\example\entity\Location.class
 org\example\entity\Task.class
-org\example\entity\Player.class
-org\example\entity\BaseEntity.class
+org\example\entity\Crewmate$CrewmateBuilder.class
+org\example\entity\enums\Color.class
 org\example\entity\Imposter.class
+org\example\entity\Location$LocationBuilder.class
+org\example\entity\PlayerView.class
+org\example\entity\Player.class
+org\example\entity\Imposter$ImposterBuilder.class
+org\example\entity\BaseEntity.class
+org\example\entity\Task$TaskBuilder.class

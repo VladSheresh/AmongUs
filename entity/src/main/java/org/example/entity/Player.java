@@ -4,12 +4,15 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.experimental.SuperBuilder;
 
 import javax.persistence.*;
 
 @Getter
 @Setter
 @MappedSuperclass
+@NoArgsConstructor //должен быть пустой конструктор
+@SuperBuilder(toBuilder = true) //надо для абстрактного сервиса
 public abstract class Player extends BaseEntity {
 
     @Column(name = "nick_name")
