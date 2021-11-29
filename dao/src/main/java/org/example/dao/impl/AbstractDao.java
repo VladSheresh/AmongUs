@@ -13,6 +13,7 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import java.util.List;
+import java.util.Optional;
 
 @Slf4j
 public abstract class AbstractDao<T extends BaseEntity> implements Dao<T> {
@@ -46,9 +47,10 @@ public abstract class AbstractDao<T extends BaseEntity> implements Dao<T> {
     }
 
     @Override
-    public T getById(Long id) {
+    public Optional<T> getById(Long id) {
         log.info("Выполняю метод get, id = " + id);
-        return entityManager.find(getEntityClass(), id);
+        T entity = entityManager.find(getEntityClass(), id);
+        return Optional.of(entity);
     }
 
     @Override

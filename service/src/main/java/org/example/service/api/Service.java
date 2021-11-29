@@ -2,16 +2,17 @@ package org.example.service.api;
 
 
 import org.example.entity.BaseEntity;
-import org.example.service.dto.AbstractDto;
 
 import java.util.List;
+import java.util.Optional;
 
-public interface Service<T extends BaseEntity,C extends AbstractDto,U extends AbstractDto,G extends AbstractDto> {
-    void save(C dto);
-    void update(U dto);
+
+public interface Service<T extends BaseEntity> {
+    void save(T entity);
+    void update(T entity);
     void delete(Long id);
-    G getById(Long id);
-    List<G> getAll();
+    Optional <T> getById(Long id);
+    List<T> getAll();
 
   //  List<G> getAllSortedBy(String name);
 }
