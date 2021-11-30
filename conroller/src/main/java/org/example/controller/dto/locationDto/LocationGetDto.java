@@ -1,8 +1,8 @@
-package org.example.service.dto.locationDto;
+package org.example.controller.dto.locationDto;
 
 import lombok.Builder;
 import lombok.Data;
-import org.example.service.dto.AbstractDto;
+import org.example.controller.dto.AbstractDto;
 
 @Builder
 @Data

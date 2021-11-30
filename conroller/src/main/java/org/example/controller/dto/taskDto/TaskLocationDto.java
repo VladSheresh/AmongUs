@@ -1,4 +1,4 @@
-package org.example.service.dto.taskDto;
+package org.example.controller.dto.taskDto;
 
 import lombok.Builder;
 import lombok.Data;

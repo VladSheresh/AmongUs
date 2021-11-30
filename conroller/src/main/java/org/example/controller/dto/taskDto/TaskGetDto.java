@@ -1,8 +1,8 @@
-package org.example.service.dto.taskDto;
+package org.example.controller.dto.taskDto;
 
 import lombok.Builder;
 import lombok.Data;
-import org.example.service.dto.AbstractDto;
+import org.example.controller.dto.AbstractDto;
 
 import java.util.List;
 

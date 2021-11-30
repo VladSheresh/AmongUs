@@ -1,10 +1,9 @@
-package org.example.service.dto;
+package org.example.controller.dto;
 
 
-import lombok.Builder;
 import lombok.Data;
 
-@Builder
+
 @Data
 public abstract class AbstractDto {
 }

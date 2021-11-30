@@ -1,10 +1,10 @@
-package org.example.service.dto.crewmateDto;
+package org.example.controller.dto.crewmateDto;
 
 import lombok.Builder;
 import lombok.Data;
-import org.example.service.dto.AbstractDto;
-import org.example.service.dto.commanDto.PlayerViewDto;
-import org.example.service.dto.commanDto.LocationDto;
+import org.example.controller.dto.AbstractDto;
+import org.example.controller.dto.commanDto.LocationDto;
+import org.example.controller.dto.commanDto.PlayerViewDto;
 
 @Builder
 @Data

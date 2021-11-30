@@ -1,4 +1,4 @@
-package org.example.service.dto.commanDto;
+package org.example.controller.dto.commanDto;
 
 import lombok.Builder;
 import lombok.Data;
