@@ -27,6 +27,9 @@
         <module>service</module>
         <module>conroller</module>
         <module>start</module>
+        <module>common</module>
+        <module>utils</module>
+        <module>common</module>
     </modules>
 
     <dependencies>

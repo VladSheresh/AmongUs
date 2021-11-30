@@ -18,11 +18,14 @@ public abstract class Player extends BaseEntity {
     @Column(name = "nick_name")
     private String nickname;
 
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "player_view_id")
     private PlayerView playerView;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "location_id")
     private Location location;
+
+    @Column(name = "is_dead")
+    private boolean isDead;
 }

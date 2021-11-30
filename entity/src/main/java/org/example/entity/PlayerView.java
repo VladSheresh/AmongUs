@@ -21,9 +21,9 @@ public class PlayerView extends BaseEntity {
     @Column(name="hat")
     private boolean hat;
 
-    @OneToOne(mappedBy = "playerView", fetch = FetchType.LAZY)
+    @OneToOne(mappedBy = "playerView", fetch = FetchType.EAGER)
     private Imposter imposter;
 
-    @OneToOne(mappedBy = "playerView", fetch = FetchType.LAZY)
+    @OneToOne(mappedBy = "playerView", fetch = FetchType.EAGER)
     private Crewmate crewmate;
 }

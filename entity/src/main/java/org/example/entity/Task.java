@@ -18,7 +18,10 @@ public class Task extends BaseEntity {
     @JoinColumn(name = "location_id")
     private Location location;
 
-    @ManyToMany(mappedBy = "tasks", fetch = FetchType.LAZY)
+    @ManyToMany(mappedBy = "tasks", fetch = FetchType.EAGER)
     private List<Crewmate> crewmates;
+
+    @Column(name = "is_complete")
+    private boolean isComplete;
 
 }

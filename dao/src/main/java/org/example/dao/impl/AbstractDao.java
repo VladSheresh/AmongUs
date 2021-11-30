@@ -12,15 +12,17 @@ import javax.persistence.Query;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 
 @Slf4j
+@Transactional
 public abstract class AbstractDao<T extends BaseEntity> implements Dao<T> {
 
     @PersistenceContext
     @Getter(AccessLevel.PROTECTED)
-    private EntityManager entityManager;
+    protected EntityManager entityManager;
 
     protected abstract Class<T> getEntityClass();
 

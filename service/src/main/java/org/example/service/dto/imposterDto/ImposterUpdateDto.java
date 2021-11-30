@@ -12,4 +12,5 @@ public class ImposterUpdateDto extends AbstractDto {
     private String nickname;
     private PlayerViewDto imposterPlayerViewDto;
     private LocationDto location;
+    private boolean isDead;
 }

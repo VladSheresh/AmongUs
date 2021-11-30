@@ -17,12 +17,10 @@ import java.util.List;
 @SuperBuilder(toBuilder = true)
 public class Crewmate extends Player{
 
-    @ManyToMany(fetch = FetchType.LAZY)
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "crewmate_task",
             joinColumns = @JoinColumn(name = "crewmate_id"),
             inverseJoinColumns = @JoinColumn(name = "task_id"))
     private List<Task> tasks;
 
-    @Column(name = "is_dead")
-    private boolean isDead;
 }
