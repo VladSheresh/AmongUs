@@ -10,6 +10,7 @@
         <module name="entity" />
         <module name="start" />
         <module name="common" />
+        <module name="security" />
         <module name="service" />
         <module name="dao" />
         <module name="conroller" />
@@ -25,6 +26,7 @@
       <module name="conroller" options="-parameters" />
       <module name="dao" options="-parameters" />
       <module name="entity" options="-parameters" />
+      <module name="security" options="-parameters" />
       <module name="service" options="-parameters" />
       <module name="start" options="-parameters" />
       <module name="utils" options="-parameters" />

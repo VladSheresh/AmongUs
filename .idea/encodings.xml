@@ -5,6 +5,7 @@
     <file url="file://$PROJECT_DIR$/conroller/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dao/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/entity/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/security/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/start/src/main/java" charset="UTF-8" />
   </component>

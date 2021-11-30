@@ -30,6 +30,7 @@
         <module>common</module>
         <module>utils</module>
         <module>common</module>
+        <module>security</module>
     </modules>
 
     <dependencies>
